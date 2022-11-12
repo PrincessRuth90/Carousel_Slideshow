@@ -16,11 +16,11 @@
    
 }
 .swiper{
-    width: 70%;
+    width: 40%;
     height:fit-content;
 } 
 .swiper-slide img{
-    width:80%; 
+    width:50%; 
 
    
 
@@ -31,8 +31,8 @@ height: min-content;
 
 } 
 img{
-    width: 100%;
-    height: 60vh;
+    width: 70%;
+    height: 40vh;
 }
 
 
