@@ -1,65 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>My Carousel Slider Page</title>
+   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-<!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-        <div class"swiper-slide"><img src="images/aston-martin.jpg" alt=""></div>
-        <div class"swiper-slide"><img src="images/audi-rs-e-tron-gt.jpg" alt=""></div>
-	<div class"swiper-slide"><img src="images/maserati-mc20.jpg" alt=""></div>
-	<div class"swiper-slide"><img src="images/nio-et5.jpg" alt=""></div>
-	<div class"swiper-slide"><img src="images/banner.jpg" alt=""></div>
-	<div class"swiper-slide"><img src="images/card2.jpg" alt=""></div>
-
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-  </div>
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper', {
-
-  loop: true,
-  clickable: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination'
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-
-
-});
-    </script>
+   <div class="slideshow-container">
+      <div class="mySlides fade">
+         <div class="numbertext">1 / 6</div>
+         <img src="img/aston-martin.jpg" style="width:100%">
+         <div class="text">1</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/audi-rs-e-tron-gt.jpg" style="width:100%;">
+            <div class="text">2</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/maserati-mc20.jpg" style="width:100%">
+            <div class="text">3</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/nio-et5.jpg" style="width:100%">
+            <div class="text">4</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/card2.jpg" style="width:100%">
+            <div class="text">5</div>
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/banner.jpg" style="width:100%">
+            <div class="text">6</div>
+         </div>
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+         <a class="next" onclick="plusSlides(1)">❯</a>
+   </div>
+   <br>
+   <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+   </div>
+   <script src="script.js"></script>
 </body>
-
 </html>
