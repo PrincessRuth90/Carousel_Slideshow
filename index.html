@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-   <title>My Carousel Slider Page</title>
-   <link rel="stylesheet" href="style.css">
+    <title>My Carousel Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
+
 <body>
-   <div class="slideshow-container">
-      <div class="mySlides fade">
-         <div class="numbertext">1 / 6</div>
-         <img src="image/a1.jpg" style="width:100%">
-         <div class="text">First caption</div>
-         </div>
-         <div class="mySlides fade">
-            <div class="numbertext">2 / 6</div>
-            <img src="image/a2.jpg" style="width:100%;">
-            <div class="text">Second caption</div>
-         </div>
-         <div class="mySlides fade">
-            <div class="numbertext">3 / 6</div>
-            <img src="image/a3.jpg" style="width:100%">
-            <div class="text">Third caption</div>
-         </div>
-         <div class="mySlides fade">
-            <div class="numbertext">4 / 6</div>
-            <img src="image/a4.jpg" style="width:100%">
-            <div class="text">Fourth caption</div>
-         </div>
-         <div class="mySlides fade">
-            <div class="numbertext">5 / 6</div>
-            <img src="image/a5.jpg" style="width:100%">
-            <div class="text">Fifth caption</div>
-         </div>
-         <div class="mySlides fade">
-            <div class="numbertext">6 / 6</div>
-            <img src="image/a6.jpg" style="width:100%">
-            <div class="text">Sixth caption</div>
-         </div>
-         <a class="prev" onclick="plusSlides(-1)">❮</a>
-         <a class="next" onclick="plusSlides(1)">❯</a>
-   </div>
-   <br>
-   <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-   </div>
-   <script src="script.js"></script>
+    <div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="image/a1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/a2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/a3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/a4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/a5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="image/a6.jpg" alt=""></div>
+      
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+  
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>   
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+ 
+  loop: true,
+  clickable: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination'
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+ 
+});
+    </script>
 </body>
+
 </html>

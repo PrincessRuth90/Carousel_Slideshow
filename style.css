@@ -1,109 +1,41 @@
-* {
-	box-sizing: border-box
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+
 }
-body {
-       font-family: Verdana, sans-serif; 
-       margin:0
-}
-.mySlides {
-      display: none
-}
-img {
-      vertical-align: middle;
-}
-.slide_img{
+ .container{
     width: 100%;
-    max-height: 60vh;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    box-shadow: 0 2px 4px rgba(0,0,0,.2);
-}
-/* .bg{
+.swiper{
+    width: 70%;
+    height:fit-content;
+} 
+.swiper-slide img{
+    width:80%; 
+
+   
+
+} 
+.swiper-wrapper{
+    align-items: center;
+height: min-content;
+
+} 
+img{
     width: 100%;
     height: 60vh;
-    position: absolute;
-    top:0;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    z-index: 1;
-} */
-.slideshow-container:hover>a{
-    display: block;
-    transition: 2s ease-in-out;
-}
-h2{
-    margin-bottom: 30px;
-    text-align: center;
-    color: #666;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 2s ease-in-out;
-    border-radius: 50px;
-    user-select: none;
-    display:none;
-}
-/* Position the "prev button" to the left */
-.prev{
-    left: 20px;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 20px;
-  border-radius: 50px;
-}
 
-/* On hover, add a black background color with a little bit seethrough */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
 
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-}
+  
 
-/* Number text (1/6 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
